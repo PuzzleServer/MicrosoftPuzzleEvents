@@ -1,0 +1,163 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Microsoft Puzzle Events";
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Intern Puzzle Events at Microsoft</title>
+
+    <style>
+        .jumbotron {
+            background-color: #0078D7;
+            color: #ffffff;
+        }
+
+        a.jumbotronlink:link {
+            color: #cccccc;
+        }
+
+        a.jumbotronlink:hover {
+            color: #ffffff;
+        }
+
+        a.jumbotronlink:active {
+            color: #ffffff;
+        }
+
+        a.jumbotronlink:visited {
+            color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Intern Puzzle Events @@ Microsoft</h1>
+            <p>Microsoft has a rich tradition of puzzling powered by volunteer groups from around the company. We’re proud to present two puzzle events this summer that have been adapted to run purely virtually, built specifically for our summer interns. Whether you’ve never looked at puzzles before, are a veteran puzzle solver, or anywhere in between, grab some teammates and we’re confident you’ll find an experience that you’ll love.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <p><em>Microsoft Intern Puzzleday</em> is inspired by and is built to be a less intense version of the Microsoft Puzzlehunt and MIT IAP Mystery Hunt in which teams of interns work together or split up to solve a large number of original puzzles of different kinds as quickly as possible.</p>
+        <p>The <em>Microsoft Intern Game</em> is traditionally a road rally event inspired by The Game and Midnight Madness in which teams of interns work together to overcome a series of team-based challenges focused on communications and working together.</p>
+        <p>In adapting these events from in-person to online, we've noticed that they may feel a bit similar at first glance, and we’d like to help you understand the difference and to find which are right for you. You can participate in either or both!</p>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col" width="20%"></th>
+                    <th scope="col" width="40%"><img src="images/PuzzledayLogo.png" class="img-fluid h-25" /></th>
+                    <th scope="col" width="40%"><img src="images/MSIGLogoWithText.png" class="img-fluid h-25" /></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">What is the basic format?</th>
+                    <td colspan=2>Teams of 4-6 players online solving puzzles. Your team can be the same or different between the two events.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Who can play?</th>
+                    <td>All interns can play, and interns may each invite one external guest to play on their team.<br /><br /> Guests cannot be Microsoft FTEs; they get to play these puzzles later, but this event is for you.</td>
+                    <td>Microsoft interns only, no guests or FTEs are permitted.</td>
+                </tr>
+                <tr>
+                    <th scope="row">How many teams can play?</th>
+                    <td>Unlimited!</td>
+                    <td>Since this event is more resource-intensive, capacity is limited, and there will be an application process.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Who will enjoy this event?</th>
+                    <td>The event is built to be easily accessible and inclusive for all interns – most players have never done a puzzling event before. This is a great way to learn about the fun of solving puzzles!</td>
+                    <td>While this event is built to appeal to a wide range of interns with varying experience, it requires a higher time commitment and puzzles may be more difficult.</td>
+                </tr>
+                <tr>
+                    <th scope="row">How many puzzles?</th>
+                    <td>About 30 smaller puzzles. Your team will have many available at the same time. Your team can choose to solve these puzzles together or split up as you see fit.</td>
+                    <td>About 15 larger puzzles. Your team will have one puzzle at a time which will require your entire team to solve together.</td>
+                </tr>
+                <tr>
+                    <th scope="row">What are the puzzles like?</th>
+                    <td>Crosswords, wordplay, visual logic puzzles, etc.</td>
+                    <td>Realtime interactions with event staff, strong focus on teamwork/coordination.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Where can I read about past events?</th>
+                    <td>You can find previous events and puzzles at the <a href="https://puzzlearchive.azurewebsites.net/puzzleday/main.html">Intern Puzzleday archives</a>.</td>
+                    <td>You can find previous events and puzzles at the <a href="http://interngame.microsoft.com/">Intern Game archives</a>.</td>
+                </tr>
+                <tr>
+                    <th scope="row">When is the event happening?</th>
+                    <td>Day 1: Saturday, 7/11/20, 10:00 a.m.–1:30 p.m. PDT<br />Day 2: Sunday, 7/12/20, 10:00 a.m.–1:30 p.m. PDT<br /><br />New/different puzzles on each day.</td>
+                    <td>Day 1: Saturday, 7/25/20, 9:00 a.m.–4:00 p.m. PDT<br />Day 2: Saturday, 8/1/20, 9:00 a.m.–4:00 p.m. PDT<br /><br />New/different puzzles on each day. Because of limited team capacity, overflow events may occur on 7/26 and 8/2 as needed.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Can I play on only one of the two days?</th>
+                    <td>Teams can be altered between days if necessary - if you plan to do this, please make sure you discuss expectations and plans with your teammates so you’re all on the same page and there are no unpleasant surprises.</td>
+                    <td>The two days of this event are built to be experienced together, so the event is designed for teams to participate on both days; applications from teams that are committed to attending both weekends will be prioritized.</td>
+                </tr>
+                <tr>
+                    <th scope="row">How can I find teammates?</th>
+                    <td>Ask interns in your cohort or your product group or consider asking in social and puzzling channels across the intern community. You can also sign up as a team looking for additional players or join a team that’s already looking.</td>
+                    <td>Ask interns in your cohort or your product group or consider asking in social and puzzling channels across the intern community.</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td><a class="btn btn-secondary" href="http://aka.ms/pd2020" role="button">To the Main Intern Puzzleday Site! &raquo;</a></td>
+                    <td><a class="btn btn-secondary" href="http://aka.ms/msig" role="button">To the Main Intern Game Site! &raquo;</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>You’re welcome and encouraged to participate in either or both of these events – if you’re not sure, we recommend giving Intern Puzzleday a try; it’s built to be accessible and fun for everyone and we’ve scheduled these events intentionally so that you can give Puzzleday a try before deciding whether to commit to Intern Game.</p>
+        <p> For interns with special needs, please contact the organizers as early as possible so appropriate accommodations can be made.</p>
+    </div>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-5">Working on our puzzle?</h1>
+            <p><br />You should have received <a class="jumbotronlink" href="images/PuzzleEventsCard.pdf">a copy of this puzzle</a> on a postcard in your welcome package, or digitally in your Intern Workbook.</p>
+            <script type="text/javascript">
+        var hintShown = 0;
+        var numHints = 4;
+        function showNextHint(){
+        var element = document.getElementById(hintShown++);
+        if (element) {
+            var display = element.style.display;
+            if (display == "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+        if (hintShown >= numHints){
+        document.getElementById("HintMe").style.display = "none";
+        }
+        }
+
+        function showAnswer(){
+        	document.getElementById("Answer").style.display = "block";
+        	document.getElementById("AnswerMe").style.display = "none";
+        }
+            </script>
+            
+            <p><button id="HintMe" onclick="showNextHint()">Need a hint?</button></p>
+            <p id="0" style="display: none">This is a rebus puzzle, where the sounds of the words, added or subtracted make new words. For an example that is not used in the puzzle, 👩‍🍳 + 🔑 = 🍪, because COOK + KEY sounds like COOKIE.</p>
+            <p id="1" style="display: none">The first rebus uses the microphone from below to make MICROBE – MIC = ROBE. When you’ve solved the other four, read the five middle elements in order.</p>
+            <p id="2" style="display: none">The next hint will give away the answer to this puzzle. Please be sure you are ready to see the answer before asking for another hint.</p>
+            <p id="3" style="display: none">The five rebuses are MICROBE – <em>MIC</em> = ROBE, AIR + <em>ROSE</em> = ARROWS, BLAST + <em>OFF</em> = BLASTOFF, CAR + <em>TIN</em> = CARTON, LAN + <em>TURN</em> = LANTERN. Now read the center images from top to bottom.</p>
+            <p><button id="AnswerMe" onclick="showAnswer()">See the answer.</button></p>
+            <p id="Answer" style="display: none"> The center images, taken in order from top to bottom, make <em>MIC + ROSE + OFF + TIN + TURN = MICROSOFT INTERN</em>.</p>
+        </div>
+    </div>
+
+</body>
+</html>
