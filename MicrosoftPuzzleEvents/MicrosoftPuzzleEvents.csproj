@@ -5,12 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Pages\MSIGLogoWithText.png" />
-    <None Remove="Pages\PuzzledayLogo.png" />
-    <None Remove="Pages\PuzzleEventsCard.pdf" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="wwwroot\images\PuzzledayLogo.png" />
     <Resource Include="wwwroot\images\PuzzleEventsCard.pdf" />
   </ItemGroup>

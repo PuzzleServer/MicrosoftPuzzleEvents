@@ -1,10 +1,4 @@
-﻿@page
-@model IndexModel
-@{
-    ViewData["Title"] = "Microsoft Puzzle Events";
-}
-
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -56,14 +50,19 @@
             <thead>
                 <tr>
                     <th scope="col" width="20%"></th>
-                    <th scope="col" width="40%"><img src="images/PuzzledayLogo.png" class="img-fluid h-25" /></th>
-                    <th scope="col" width="40%"><img src="images/MSIGLogoWithText.png" class="img-fluid h-25" /></th>
+                    <th scope="col" width="40%"><img src="images/PuzzledayLogo.png" class="img-fluid" style="height:30px;" /></th>
+                    <th scope="col" width="40%"><img src="images/MSIGLogoWithText.png" class="img-fluid" style="height:30px;" /></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <th scope="row">What is the basic format?</th>
                     <td colspan=2>Teams of 4-6 players online solving puzzles. Your team can be the same or different between the two events.</td>
+                </tr>
+                <tr>
+                    <th scope="row">When is the event happening?</th>
+                    <td>This is a single event spanning two days.<br /><br />Day 1: Saturday, July 10<br />Day 2: Sunday, July 11<br /><br />Single start time.<br />10 a.m.-1:30 p.m. PDT (5:00-8:30 p.m. GMT)<br /><br />New/different puzzles on each day.</td>
+                    <td>This is a single event spanning two days.<br /><br />Day 1: Saturday, July 24<br />Day 2: Saturday, July 31<br /><br />Three time choices for players in different time zones.<br />4 a.m.-12 p.m. PDT (11 a.m.-7 p.m GMT)<br />7 a.m.-3 p.m. PDT (2 p.m.-10 p.m. GMT)<br />9 a.m.-5 p.m. PDT (4 p.m.-12 a.m. GMT)<br /><br />New/different puzzles on each day. Because of limited team capacity, an overflow event may occur on July 25 and August 1 as needed.</td>
                 </tr>
                 <tr>
                     <th scope="row">Who can play?</th>
@@ -73,7 +72,12 @@
                 <tr>
                     <th scope="row">How many teams can play?</th>
                     <td>Unlimited!</td>
-                    <td>Since this event is more resource-intensive, capacity is limited, and there will be an application process.</td>
+                    <td>Since this event is more resource-intensive, capacity is limited and there will be an application process. Team applications will be available starting June 9 and are due July 2 - please visit the event site for more details, including what to do if your internship starts later than those dates.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Is there an entry fee?</th>
+                    <td>No, this event is free for all interns and guests!</td>
+                    <td>Yes, $15 per player to cover the shipping of physical puzzle components.</td>
                 </tr>
                 <tr>
                     <th scope="row">Who will enjoy this event?</th>
@@ -88,17 +92,12 @@
                 <tr>
                     <th scope="row">What are the puzzles like?</th>
                     <td>Crosswords, wordplay, visual logic puzzles, etc.</td>
-                    <td>Realtime interactions with event staff, strong focus on teamwork/coordination.</td>
+                    <td>Puzzles emphasizing teamwork and coordination including physical components, real-time engagement with actors, and interactive digital environments.</td>
                 </tr>
                 <tr>
                     <th scope="row">Where can I read about past events?</th>
                     <td>You can find previous events and puzzles at the <a href="https://puzzlearchive.azurewebsites.net/puzzleday/main.html">Intern Puzzleday archives</a>.</td>
                     <td>You can find previous events and puzzles at the <a href="http://interngame.microsoft.com/">Intern Game archives</a>.</td>
-                </tr>
-                <tr>
-                    <th scope="row">When is the event happening?</th>
-                    <td>Day 1: Saturday, 7/11/20, 10:00 a.m.–1:30 p.m. PDT<br />Day 2: Sunday, 7/12/20, 10:00 a.m.–1:30 p.m. PDT<br /><br />New/different puzzles on each day.</td>
-                    <td>Day 1: Saturday, 7/25/20, 9:00 a.m.–4:00 p.m. PDT<br />Day 2: Saturday, 8/1/20, 9:00 a.m.–4:00 p.m. PDT<br /><br />New/different puzzles on each day. Because of limited team capacity, overflow events may occur on 7/26 and 8/2 as needed.</td>
                 </tr>
                 <tr>
                     <th scope="row">Can I play on only one of the two days?</th>
@@ -108,47 +107,44 @@
                 <tr>
                     <th scope="row">How can I find teammates?</th>
                     <td>Ask interns in your cohort or your product group or consider asking in social and puzzling channels across the intern community. You can also sign up as a team looking for additional players or join a team that’s already looking.</td>
-                    <td>Ask interns in your cohort or your product group or consider asking in social and puzzling channels across the intern community.</td>
+                    <td>Ask interns in your cohort or your product group or consider asking in social and puzzling channels across the intern community. You can also look for teammates in our Team, and if you are starting late, sign up to join an existing team.</td>
                 </tr>
                 <tr>
                     <th scope="row"></th>
-                    <td><a class="btn btn-secondary" href="http://aka.ms/pd2020" role="button">To the Main Intern Puzzleday Site! &raquo;</a></td>
+                    <td><a class="btn btn-secondary" href="http://aka.ms/pd2021" role="button">To the Main Intern Puzzleday Site! &raquo;</a></td>
                     <td><a class="btn btn-secondary" href="http://aka.ms/msig" role="button">To the Main Intern Game Site! &raquo;</a></td>
                 </tr>
             </tbody>
         </table>
-        <p>You’re welcome and encouraged to participate in either or both of these events – if you’re not sure, we recommend giving Intern Puzzleday a try; it’s built to be accessible and fun for everyone and we’ve scheduled these events intentionally so that you can give Puzzleday a try before deciding whether to commit to Intern Game.</p>
-        <p> For interns with special needs, please contact the organizers as early as possible so appropriate accommodations can be made.</p>
     </div>
 
     <div class="jumbotron">
         <div class="container">
             <h1 class="display-5">Working on our puzzle?</h1>
-            <p><br />You should have received <a class="jumbotronlink" href="images/PuzzleEventsCard.pdf">a copy of this puzzle</a> on a postcard in your welcome package, or digitally in your Intern Workbook.</p>
+            <p><br />You should have received <a class="jumbotronlink" href="images/PuzzleEventsCard.pdf">a copy of this puzzle</a>. If you missed our walkthrough at your Welcome Day, you can get hints or check your answer here!</p>
             <script type="text/javascript">
-        var hintShown = 0;
-        var numHints = 4;
-        function showNextHint(){
-        var element = document.getElementById(hintShown++);
-        if (element) {
-            var display = element.style.display;
-            if (display == "none") {
-                element.style.display = "block";
-            } else {
-                element.style.display = "none";
-            }
-        }
-        if (hintShown >= numHints){
-        document.getElementById("HintMe").style.display = "none";
-        }
-        }
+                var hintShown = 0;
+                var numHints = 4;
+                function showNextHint() {
+                    var element = document.getElementById(hintShown++);
+                    if (element) {
+                        var display = element.style.display;
+                        if (display == "none") {
+                            element.style.display = "block";
+                        } else {
+                            element.style.display = "none";
+                        }
+                    }
+                    if (hintShown >= numHints) {
+                        document.getElementById("HintMe").style.display = "none";
+                    }
+                }
 
-        function showAnswer(){
-        	document.getElementById("Answer").style.display = "block";
-        	document.getElementById("AnswerMe").style.display = "none";
-        }
+                function showAnswer() {
+                    document.getElementById("Answer").style.display = "block";
+                    document.getElementById("AnswerMe").style.display = "none";
+                }
             </script>
-            
             <p><button id="HintMe" onclick="showNextHint()">Need a hint?</button></p>
             <p id="0" style="display: none">This is a rebus puzzle, where the sounds of the words, added or subtracted make new words. For an example that is not used in the puzzle, 👩‍🍳 + 🔑 = 🍪, because COOK + KEY sounds like COOKIE.</p>
             <p id="1" style="display: none">The first rebus uses the microphone from below to make MICROBE – MIC = ROBE. When you’ve solved the other four, read the five middle elements in order.</p>
