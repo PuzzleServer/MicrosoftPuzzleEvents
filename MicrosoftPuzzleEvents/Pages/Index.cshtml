@@ -1,4 +1,6 @@
 ﻿@page
+@using MicrosoftPuzzleEvents.Components
+
 @model IndexModel
 @{
     ViewData["Title"] = "Microsoft Puzzle Events";
@@ -151,6 +153,9 @@
                     document.getElementById("AnswerMe").style.display = "none";
                 }
             </script>
+            
+            <component type="typeof(CheckAnswer)" render-mode="ServerPrerendered" />
+
             <p><button id="HintMe" onclick="showNextHint()">Need a hint?</button></p>
             <p id="0" style="display: none">This is a rebus puzzle, where the sounds of the words, added or subtracted make new words. For an example that is not used in the puzzle, 👩‍🍳 + 🔑 = 🍪, because COOK + KEY sounds like COOKIE.</p>
             <p id="1" style="display: none">The first rebus uses the microphone from below to make MICROBE – MIC = ROBE. When you’ve solved the other four, read the five middle elements in order.</p>

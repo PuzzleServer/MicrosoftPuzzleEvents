@@ -1,0 +1,26 @@
+﻿@namespace MicrosoftPuzzleEvents.Components
+
+<form>
+    <input type="text" @oninput="DoCheckAnswer" />
+    @if (!HideCorrect)
+    {
+        <div class="alert-success">Correct!</div>
+    }
+</form>
+
+@code {
+    public static bool HideCorrect { get; set; } = true;
+
+    public static void DoCheckAnswer(ChangeEventArgs eventArgs)
+    {
+        string formattedAnswer = ((string)eventArgs.Value).ToLower().Replace(" ", null);
+        if (formattedAnswer.Equals("microsoftintern", StringComparison.OrdinalIgnoreCase))
+        {
+            HideCorrect = false;
+        }
+        else
+        {
+            HideCorrect = true;
+        }
+    }
+}
