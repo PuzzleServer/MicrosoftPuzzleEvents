@@ -2,9 +2,7 @@
 @using MicrosoftPuzzleEvents.Components
 
 @model IndexModel
-@{
-    ViewData["Title"] = "Microsoft Puzzle Events";
-}
+@{ ViewData["Title"] = "Microsoft Puzzle Events"; }
 
 <!doctype html>
 <html lang="en">
@@ -70,7 +68,7 @@
                 <tr>
                     <th scope="row">When is the event happening?</th>
                     <td>This is a single event spanning two days.<br /><br />Day 1: Saturday, July 10<br />Day 2: Sunday, July 11<br /><br />Single start time.<br />10 a.m.-1:30 p.m. PDT (5:00-8:30 p.m. GMT)<br /><br />New/different puzzles on each day.</td>
-                    <td>This is a single event spanning two days.<br /><br />Day 1: Saturday, July 24<br />Day 2: Saturday, July 31<br /><br />Three time choices for players in different time zones.<br />4 a.m.-12 p.m. PDT (11 a.m.-7 p.m GMT)<br />7 a.m.-3 p.m. PDT (2 p.m.-10 p.m. GMT)<br />9 a.m.-5 p.m. PDT (4 p.m.-12 a.m. GMT)<br /><br />New/different puzzles on each day. Because of limited team capacity, an overflow event may occur on July 25 and August 1 as needed.</td>
+                    <td>This is a single event spanning two days.<br /><br />Day 1: Saturday, July 24<br />Day 2: Saturday, July 31<br /><br />Times are still TBD and will be optimized for intern time zones.<br /><br />New/different puzzles on each day. Because of limited team capacity, an overflow event may occur on July 25 and August 1 as needed.</td>
                 </tr>
                 <tr>
                     <th scope="row">Who can play?</th>
@@ -153,7 +151,7 @@
                     document.getElementById("AnswerMe").style.display = "none";
                 }
             </script>
-            
+
             <component type="typeof(CheckAnswer)" render-mode="ServerPrerendered" />
 
             <p><button id="HintMe" onclick="showNextHint()">Need a hint?</button></p>
